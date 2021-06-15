@@ -35,7 +35,7 @@ nav .navbar .menu li {
     list-style: none;
 }
 
-.navbar .menu li {
+.navbar .menu li a{
     font-size: 18px;
     font-size: 500;
     color: #0E2431;
@@ -44,5 +44,30 @@ nav .navbar .menu li {
 .navbar .media-icons a {
     font-size: 18px;
     margin: 0 6px;
+    padding: 20px;
     color: #4070F4;
+}
+
+@media (max-width: 750px) {
+    nav .navbar .menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+    }
+    .navbar .menu li a {
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: #FFF;
+    }
+    nav .media-icons a {
+        display: none;
+    }
 }
